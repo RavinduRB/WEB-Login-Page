@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-super</title>
+    <link rel="stylesheet" href="admin-styles.css" />
+  </head>
+  <body>
+     <!--Header-->
+
+     <header>
+      
+      <div class="header-link-pages">
+        <b><img src="images/Screenshot (160).png" width="140px" height="30px" alt="logo"></b>
+          <p>
+            <a href="home.html">Home</a>
+          </p>
+          <p>
+            <a href="user-products.html">All Products</a>
+          </p>
+          <p id="admin_products_pg">
+            <a href="admin-index.html" >Admin Products</a>
+          </p>
+          <p>
+            <a href="about.html">About</a>
+          </p>
+           <!-- Cart  -->
+          <p  class="cart_img">
+            <a href="shopping-cart.html"><img src="Images/cart (1).png" alt="cart" /></a>
+          </p>
+
+          <p>
+            <button class="logout_Btn" id="logout_Btn">LogOut</button>
+          </p>
+          
+        </div>
+    
+       
+
+       
+
+     </header>
+     <!-- Boby -->
+    <div class="body_outer">
+      
+
+      <div class="container">
+        <!-- Container to hold the product list and add product form side by side -->
+
+        <!-- Product List Section -->
+        <div class="product_list_outer">
+          <div class="header">
+            <!-- Header for the product list with title and add button -->
+            <h2>Product List</h2>
+            <!-- Add new product button -->
+            <button class="add-new-btn" id="show-add-product-form">
+              +Add New
+            </button>
+            <!-- Add new product button -->
+          </div>
+          <table id="product-list-table">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Weight</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Product rows will be inserted here by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Add Product Form Section -->
+        <div
+          class="add-product-form height_max_con"
+          id="add-product-form-container"
+        >
+          <!-- Heading for the add product form -->
+          <h2>Add Product</h2>
+          <!--Image preview-->
+          <div class="image_preview_outer">
+            <div class="image_preview" id="empty_image_content_new">
+              <label>Add image Url to show preview.</label>
+            </div>
+            <div class="image_preview" id="prod_image_content_new">
+              <img id="product_img_new" class="image_class" />
+            </div>
+          </div>
+          <form id="add-product-form">
+            <!-- Input fields for adding a new product -->
+            <label for="product_name">Product Name:</label>
+            <input type="text" id="product_name" name="product_name" required />
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required />
+
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight" required />
+
+            <label for="image_url">Image URL:</label>
+            <input type="text" id="image_url" name="image_url" required />
+
+            <label for="product_cat">Select Category:</label>
+            <!-- <input type="number" id="category_id" name="category_id" required /> -->
+            <select
+              name="categories"
+              id="product_cat"
+              class="category_selector"
+            >
+              <option value="SNK">Snacks</option>
+              <option value="GRY">Groceries</option>
+              <option value="VEG">Vegtables</option>
+              <option value="FRT">Fruits</option>
+              <option value="MET">Meat</option>
+              <option value="BSEL">Best Selling</option>
+              <option value="ALL" selected>All</option>
+            </select>
+            <!-- Submit button for the form -->
+            <button class="add-new-btn" id="add_new_product">Create New</button>
+          </form>
+        </div>
+
+        <!-- Edit Product Form Section -->
+        <div
+          class="add-product-form height_max_con"
+          id="edit-product-form-container"
+          style="display: none"
+        >
+          <!-- Initially hidden -->
+          <h2>Edit Product</h2>
+          <!--Image preview-->
+          <div class="image_preview_outer">
+            <div class="image_preview" id="empty_image_content">
+              <label>Add image Url to show preview.</label>
+            </div>
+            <div class="image_preview" id="prod_image_content">
+              <img id="edit_product_img" class="image_class" />
+            </div>
+          </div>
+          <!-- Heading for the edit product form -->
+          <form id="edit-product-form">
+            <!-- Hidden field to store product ID -->
+            <input type="hidden" id="edit_product_id" name="edit_product_id" />
+
+            <!-- Input fields for editing a product -->
+            <label for="edit_product_name">Product Name:</label>
+            <input
+              type="text"
+              id="edit_product_name"
+              name="edit_product_name"
+              required
+            />
+
+            <label for="edit_price">Price:</label>
+            <input type="number" id="edit_price" name="edit_price" required />
+
+            <label for="edit_weight">Weight:</label>
+            <input type="text" id="edit_weight" name="edit_weight" required />
+
+            <label for="edit_image_url">Image URL:</label>
+            <input
+              type="text"
+              id="edit_image_url"
+              name="edit_image_url"
+              required
+            />
+
+            <label for="edit_category_id">Category ID:</label>
+            <label for="product_cat">Select Category:</label>
+            <!-- <input type="number" id="category_id" name="category_id" required /> -->
+            <select
+              name="categories"
+              id="edit_product_cat"
+              class="category_selector"
+            >
+              <option value="SNK">Snacks</option>
+              <option value="GRY">Groceries</option>
+              <option value="VEG">Vegtables</option>
+              <option value="FRT">Fruits</option>
+              <option value="MET">Meat</option>
+              <option value="BSEL">Best Selling</option>
+              <option value="ALL" selected>All</option>
+            </select>
+
+            <button class="add-new-btn" id="update_product_btn">
+              Update Product
+            </button>
+            <!-- Submit button for the form -->
+          </form>
+        </div>
+      </div>
+    </div>
+<!--Footer-->
+
+<footer>
+  <div class="row">
+      <div class="col01">
+
+          <a href="#"><img src="images/Screenshot (160).png" alt="logo" class="footer-logo" style="width: 150px; height: auto;"></a>
+          <p>Get your essential groceries here! Can't find it anywhere? You'll find it here! Great prices when you shop with us! Search no more for the best buys..!</p> 
+      </div>
+
+      <div class="col02">
+
+          <h3>No: 49 / B</h3>
+              <p>High Level Road<br>
+              Maharagama<br>
+              Sri Lanka.</p><br>
+
+              <h2>+94 11 1393599</h2>
+              <p>(Daily operating hours 8.30a.m to 10.00p.m)</p>
+          
+      </div>
+
+      <div class="col03">
+          <h3>Quick Link</h3><br>
+
+          <p><a href="home.html">Home</a></p>
+          <p><a href="user-products.html">All products</a></p>
+          
+      </div>
+      
+      <div class="col04">
+          <h3>Categories</h3><br>
+
+          <p>
+            <a href="#">Meet items</a><br>
+            <a href="#">Vegetable</a><br>
+            <a href="#">Fruits</a><br>
+            <a href="#">Grocery items</a><br>
+            <a href="#">Snacks</a></p>
+
+      </div>
+      <div class="col05">
+
+      <p><a href="about.html">About</p>
+
+      </div>
+  </div>
+</footer>
+    <script src="admin-products.js"></script>
+  </body>
+</html>

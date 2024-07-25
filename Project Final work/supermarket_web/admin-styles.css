@@ -1,0 +1,355 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.body_outer {
+  padding: 10px;
+}
+
+/*main heading */
+h1 {
+  text-align: left;
+  color: #002d75;
+}
+
+/* Container to hold product list and add product form side by side */
+.container {
+  display: flex;
+  /* Space out the children evenly */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/*product list section */
+.product_list_outer,
+.add-product-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+
+/* product list header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/*header title */
+.header h2 {
+  margin: 0;
+  color: #002d75;
+}
+
+/*Add new product button Section */
+.add-new-btn {
+  background-color: #0092cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.add-new-btn:hover {
+  background-color: #007bb5;
+}
+
+/*product table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* table headers and cells section */
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* table headers */
+th {
+  background-color: #002d75;
+  color: white;
+}
+
+/*add product form heading */
+.add-product-form h2 {
+  color: #002d75; /* Dark blue color */
+}
+
+/*inside the add product section */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*labels inside the form section */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/*Input fields inside the form */
+input {
+  margin-bottom: 10px;
+  /* padding: 10px; */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+}
+/* Styles for the submit button inside the form */
+button[type="submit"] {
+  background-color: #0092cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+  background-color: #007bb5;
+}
+
+.image_preview_outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image_preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  border: 3px dashed #ccc;
+  margin-bottom: 10px;
+}
+.image_class {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.height_max_con {
+  height: max-content;
+}
+.category_selector {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 35px;
+  margin-bottom: 10px;
+  /* padding: 10px; */
+}
+
+/* Acction Cell */
+.acction_cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Delete Btn */
+.delete_btn {
+  height: 30px;
+  width: 60px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background: linear-gradient(to left, #b20000, #fb5959);
+  font-weight: bold;
+  justify-content: center;
+}
+
+/* Edit Btn */
+.edit_btn {
+  height: 30px;
+  width: 60px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background: linear-gradient(to left, #002d75, #0092cc);
+  font-weight: bold;
+  justify-content: center;
+}
+
+/* footer and header */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.button::before {
+  content: "\2192"; /* Unicode for right arrow */
+  margin-right: 10px;
+}
+
+/* Home in search */
+
+.header-link-pages {
+  color: rgb(164, 28, 28);
+  font-size: large;
+  padding-left: 10px;
+  display: flex;
+  background: linear-gradient(to left, #002d75, #0092cc);
+  align-items: center;
+}
+.header-link-pages p {
+  margin: 0 15px;
+  margin-left: 5%;
+  padding: 18px;
+  text-align: center;
+  display: flex;
+}
+.header-link-pages a {
+  color: #ffffff;
+  text-decoration: none; /*Removes underline */
+  font-weight: bold;
+}
+.header-link-pages b {
+  margin-top: 1%;
+}
+
+/* cart */
+
+.cart_img {
+  padding-left: 0px;
+  margin-left: 80%;
+  margin-top: -3%;
+}
+
+/* Footer */
+
+* {
+  padding: 0;
+  /* font-family: "poppins", sans-serif; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(225, 235, 235); */
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to left, #002d75, #0092cc);
+  color: #ffffff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.footer-logo {
+  max-width: 100px;
+  max-height: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col01 {
+  margin-left: -5%;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  flex-basis: 25%;
+  padding: 0px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.col02 {
+  margin-left: 5%;
+  margin-bottom: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.col03 {
+  margin-left: 7%;
+  margin-bottom: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.col04 {
+  margin-left: 8%;
+  margin-bottom: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.col05 {
+  margin-right: auto;
+}
+
+a {
+  color: #ffffff;
+}
+
+.logout_Btn {
+  height: 30px;
+  width: 100px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background: linear-gradient(to left, #000000, #858585);
+  font-weight: bold;
+  justify-content: center;
+  border-radius: 20px;
+}

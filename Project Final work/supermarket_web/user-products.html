@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-super</title>
+    <link rel="stylesheet" href="user-products.css" />
+  </head>
+  <body>
+     <!--Header-->
+
+     <header>
+      
+      <div class="header-link-pages">
+        <b><img src="Images/Screenshot (160).png" width="140px" height="30px" alt="logo"></b>
+          <p>
+            <a href="home.html">Home</a>
+          </p>
+          <p>
+            <a href="user-products.html" >All Products</a>
+          </p>
+          <p id="admin_products_pg">
+            <a href="admin-index.html" >Admin Products</a>
+          </p>
+          <p>
+            <a href="about.html">About</a>
+          </p>
+           <!-- Cart  -->
+          <p  class="cart_img">
+            <a href="shopping-cart.html"><img src="Images/cart (1).png" alt="cart" /></a>
+          </p>
+
+          <p>
+            <button class="logout_Btn" id="logout_Btn">LogOut</button>
+          </p>
+
+        </div>
+    
+       
+
+  </header>
+
+    
+    <!-- Search bar -->
+    <div class="search_bar">
+      <div class="input_btn">
+        <input id="search_val" placeholder="Search" />
+        <button id="search_btn">Search</button>
+      </div>
+
+      <!-- Drop down filter -->
+      <div class="drp_class blood-type">
+        <label for="cars">Filter:</label>
+
+        <select name="categories" id="category">
+          <option value="SNK">Snacks</option>
+          <option value="GRY">Groceries</option>
+          <option value="VEG">Vegtables</option>
+          <option value="FRT">Fruits</option>
+          <option value="MET">Meat</option>
+          <option value="BSEL">Best Selling</option>
+          <option value="ALL" selected>All</option>
+        </select>
+      </div>
+    </div>
+    <!-- Product List -->
+    <div class="product_list_outer">
+      <div id="product-list" class="product_list"></div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="row">
+          <div class="col01">
+
+              <a href="#"><img src="Images/Screenshot (160).png" alt="logo" class="footer-logo" style="width: 150px; height: auto;"></a>
+              <p>Get your essential groceries here! Can't find it anywhere? You'll find it here! Great prices when you shop with us! Search no more for the best buys..!</p> 
+          </div>
+
+          <div class="col02">
+
+              <h3>No: 49 / B</h3>
+                  <p>High Level Road<br>
+                  Maharagama<br>
+                  Sri Lanka.</p><br>
+
+                  <h2>+94 11 1393599</h2>
+                  <p>(Daily operating hours 8.30a.m to 10.00p.m)</p>
+              
+          </div>
+
+          <div class="col03">
+              <h3>Quick Link</h3><br>
+
+              <p><a href="home.html">Home</a></p>
+              <p><a href="user-products.html">All products</a></p>
+              
+          </div>
+          
+          <div class="col04">
+              <h3>Categories</h3><br>
+
+              <p>
+                <a href="#">Meet items</a><br>
+                <a href="#">Vegetable</a><br>
+                <a href="#">Fruits</a><br>
+                <a href="#">Grocery items</a><br>
+                <a href="#">Snacks</a></p>
+
+          </div>
+          <div class="col05">
+
+          <p><a href="about.html">About</p>
+
+          </div>
+      </div>
+  </footer>
+
+    <script src="user-products.js"></script>
+  </body>
+</html>

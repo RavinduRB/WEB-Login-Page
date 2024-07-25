@@ -1,0 +1,410 @@
+/* footer and header */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.button::before {
+  content: "\2192"; /* Unicode for right arrow */
+  margin-right: 10px;
+}
+
+/* Home in search */
+
+.header-link-pages {
+  color: rgb(164, 28, 28);
+  font-size: large;
+  padding-left: 10px;
+  display: flex;
+  background: linear-gradient(to left, #002d75, #0092cc);
+  align-items: center;
+}
+.header-link-pages p {
+  margin: 0 15px;
+  margin-left: 5%;
+  padding: 18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.header-link-pages a {
+  color: #ffffff;
+  text-decoration: none; /*Removes underline */
+  font-weight: bold;
+}
+.header-link-pages b {
+  margin-top: 1%;
+}
+
+/* cart */
+
+.cart_img {
+  padding-left: 0px;
+  margin-left: 80%;
+  margin-top: -3%;
+}
+
+/* Footer */
+
+* {
+  padding: 0;
+  /* font-family: "poppins", sans-serif; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(225, 235, 235); */
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to left, #002d75, #0092cc);
+  color: #ffffff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.footer-logo {
+  max-width: 100px;
+  max-height: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col01 {
+  margin-left: -5%;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  flex-basis: 25%;
+  padding: 0px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.col02 {
+  margin-left: 5%;
+  margin-bottom: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.col03 {
+  margin-left: 7%;
+  margin-bottom: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.col04 {
+  margin-left: 8%;
+  margin-bottom: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+.col05 {
+  margin-right: auto;
+}
+
+a {
+  color: #ffffff;
+}
+
+.logout_Btn {
+  height: 30px;
+  width: 100px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background: linear-gradient(to left, #000000, #858585);
+  font-weight: bold;
+  /* margin-top: 10px; */
+  justify-content: center;
+  border-radius: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.FeatureSales {
+  font-size: large;
+  font-style: normal;
+  color: #000;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(201, 196, 196, 0.8);
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.FeatureSales {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  position: relative;
+}
+.FeatureSales::before,
+.FeatureSales::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 2px;
+  background: rgb(16, 16, 16);
+}
+.FeatureSales::before {
+  left: 0;
+}
+.FeatureSales::after {
+  right: 0;
+}
+
+/* Add styling for the product_list_oute div */
+.product_list_outer {
+  display: flex;
+}
+/* Add styling for the product_list */
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+}
+/* Add styling for the products */
+.product {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Add styling for the wegith */
+.product_wegiht {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Add styling for the price tag */
+.product_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Add styling for the name tag */
+.product_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Add styling for the img tag */
+.product_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Add styling for the button */
+.product_button {
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #0cb4da;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.product_button:hover {
+  background-color: #0cb4da;
+}
+
+/* Styling for the quantity control container */
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Styling for the quantity buttons */
+.quantity-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the quantity display */
+.quantity-display {
+  font-size: 18px;
+  margin: 0 10px;
+  min-width: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styling for the Add to Cart button */
+.product_button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}

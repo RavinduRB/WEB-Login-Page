@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopping-cart.css">
+    <title>E-super</title>
+</head>
+<body>
+      <!--Header-->
+    
+      <header>
+      
+        <div class="header-link-pages">
+          <b><img src="images/Screenshot (160).png" width="140px" height="30px" alt="logo"></b>
+            <p>
+              <a href="home.html">Home</a>
+            </p>
+            <p>
+              <a href="user-products.html">All Products</a>
+            </p>
+            <p id="admin_products_pg">
+              <a href="admin-index.html" >Admin Products</a>
+            </p>
+            <p>
+              <a href="about.html">About</a>
+            </p>
+             <!-- Cart  -->
+          <p  class="cart_img">
+            <a href="shopping-cart.html"><img src="Images/cart (1).png" alt="cart" /></a>
+          </p>
+
+          <p>
+            <button class="logout_Btn" id="logout_Btn">LogOut</button>
+          </p>
+          </div>
+  
+       </header>
+
+       <!-- Body -->
+       <div class="main-content">
+        <div>
+          <h1 class="page_heading">Your Cart</h1>
+          <div class="table_outer">
+            <table class="product_table" id="product-table">
+              <thead>
+                  <tr>
+                      <th>Image</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Weight</th>
+                      <th>Quantity</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!-- Product rows will be inserted here by JavaScript -->
+              </tbody>
+          </table>
+          </div>
+         
+        
+        <div class="cart_summary" id="cart_summary">
+          <!-- <div class="total-amount" id="total-amount"></div>
+          <div class="purchase_div" id="purchase_div"> -->
+  
+          </div>
+        </div>
+        </div>
+       </div>
+      
+      
+
+       <!--Footer-->
+
+<footer>
+    <div class="row">
+        <div class="col01">
+  
+            <a href="#"><img src="images/Screenshot (160).png" alt="logo" class="footer-logo" style="width: 150px; height: auto;"></a>
+            <p>Get your essential groceries here! Can't find it anywhere? You'll find it here! Great prices when you shop with us! Search no more for the best buys..!</p> 
+        </div>
+  
+        <div class="col02">
+  
+            <h3>No: 49 / B</h3>
+                <p>High Level Road<br>
+                Maharagama<br>
+                Sri Lanka.</p><br>
+  
+                <h2>+94 11 1393599</h2>
+                <p>(Daily operating hours 8.30a.m to 10.00p.m)</p>
+            
+        </div>
+  
+        <div class="col03">
+            <h3>Quick Link</h3><br>
+  
+            <p><a href="home.html">Home</a></p>
+            <p><a href="user-products.html">All products</a></p>
+            
+        </div>
+        
+        <div class="col04">
+            <h3>Categories</h3><br>
+  
+            <p>
+              <a href="#">Meet items</a><br>
+              <a href="#">Vegetable</a><br>
+              <a href="#">Fruits</a><br>
+              <a href="#">Grocery items</a><br>
+              <a href="#">Snacks</a></p>
+  
+        </div>
+        <div class="col05">
+  
+        <p><a href="about.html">About</p>
+  
+        </div>
+    </div>
+  </footer>
+  <script src="shopping-cart.js"></script>
+</body>
+</html>
